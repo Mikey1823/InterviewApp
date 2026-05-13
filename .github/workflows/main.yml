@@ -47,8 +47,13 @@ jobs:
       - name: 📦 Install dependencies
         run: npm ci
 
-      - name: 🖼️ Install Sharp for image processing
-        run: npm install sharp
+      - name: 🖼️ Convert assets to proper PNG format
+        run: |
+          sudo apt-get install -y imagemagick
+          find assets/images -name "*.png" | while read f; do
+            echo "Converting: $f"
+            convert "$f" -define png:format=png32 "${f%.png}_converted.png" && mv "${f%.png}_converted.png" "$f"
+          done
 
       - name: 🔨 Build static web export
         run: npx expo export --platform web
