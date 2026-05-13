@@ -1,0 +1,28 @@
+{
+  "findings": [
+    {
+      "ruleId": "NPM_VULNERABLE_DEPENDENCY",
+      "description": "Vulnerability in expo (moderate)",
+      "severity": "MEDIUM",
+      "filePath": "C:/Users/Applicant02.DESKTOP-E2HIMM9/Downloads/App/Lork/package.json",
+      "line": 22,
+      "snippet": "    \"@react-navigation/elements\": \"^2.6.3\",\n    \"@react-navigation/native\": \"^7.1.8\",\n    \"expo\": \"~54.0.33\",\n    \"expo-constants\": \"~18.0.13\",\n    \"expo-font\": \"~14.0.11\",",
+      "suggestion": " Update to expo@49.0.23. Check: npm audit for details.",
+      "category": "npm"
+    },
+    {
+      "ruleId": "NPM_VULNERABLE_DEPENDENCY",
+      "description": "PostCSS has XSS via Unescaped </style> in its CSS Stringify Output (moderate)",
+      "severity": "MEDIUM",
+      "filePath": "C:/Users/Applicant02.DESKTOP-E2HIMM9/Downloads/App/Lork/package.json",
+      "line": 54,
+      "snippet": "    \"eslint\": \"^9.25.0\",\n    \"eslint-config-expo\": \"~10.0.0\",\n    \"postcss\": \"^8.5.14\",\n    \"tailwindcss\": \"^3.3.2\",\n    \"typescript\": \"~5.9.2\"",
+      "suggestion": " Update to expo@49.0.23. Check: npm audit for details.",
+      "category": "npm"
+    }
+  ],
+  "scannedFiles": 38,
+  "duration": 3300,
+  "timestamp": "2026-05-13T07:56:07.898Z",
+  "ignoredRules": []
+}
