@@ -47,6 +47,9 @@ jobs:
       - name: 📦 Install dependencies
         run: npm ci
 
+      - name: 🖼️ Install Sharp for image processing
+        run: npm install sharp
+
       - name: 🔨 Build static web export
         run: npx expo export --platform web
 
